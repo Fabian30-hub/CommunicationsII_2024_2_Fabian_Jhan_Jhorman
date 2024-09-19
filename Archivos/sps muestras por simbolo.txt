@@ -1,0 +1,6 @@
+sps muestras por simbolo
+
+sps 1
+sps 4
+sps 8
+sps 16 32.100
