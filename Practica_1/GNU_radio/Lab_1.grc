@@ -360,26 +360,6 @@ blocks:
     coordinate: [832, 324.0]
     rotation: 0
     state: true
-- name: analog_fastnoise_source_x_0
-  id: analog_fastnoise_source_x
-  parameters:
-    affinity: ''
-    alias: ''
-    amp: '1'
-    comment: ''
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    noise_type: analog.GR_GAUSSIAN
-    samples: '8192'
-    seed: '0'
-    type: float
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [336, 508.0]
-    rotation: 0
-    state: true
 - name: analog_noise_source_x_0
   id: analog_noise_source_x
   parameters:
@@ -398,7 +378,7 @@ blocks:
     bus_structure: null
     coordinate: [200, 452.0]
     rotation: 0
-    state: disabled
+    state: enabled
 - name: blocks_add_xx_0
   id: blocks_add_xx
   parameters:
@@ -528,7 +508,6 @@ blocks:
     state: true
 
 connections:
-- [analog_fastnoise_source_x_0, '0', blocks_add_xx_0, '1']
 - [analog_noise_source_x_0, '0', blocks_add_xx_0, '1']
 - [blocks_add_xx_0, '0', epy_block_2, '0']
 - [blocks_vector_source_x_0, '0', blocks_add_xx_0, '0']
@@ -540,4 +519,4 @@ connections:
 
 metadata:
   file_format: 1
-  grc_version: 3.9.8.0
+  grc_version: v3.11.0.0git-810-g1ecb8565
