@@ -4,3 +4,31 @@ sps 1
 sps 4
 sps 8
 sps 16 32.100
+
+Preguntas de control.
+a.
+Al modifical la fuente constante, la señal no tiene un nivel de dc suficiente para ver la señal entre los valores de -1 y 1.
+La fuente constante mueve la señal entre -0.5 y 0.5, y al multiplicarla por 2, ajusto los niveles queridos.
+
+b.
+El filtro de interpolación agrega muestras a la señal, para poder cumplir con el teorema de nyquist y poder tener una buena visualización.
+El valor de sps es el tamaño del vector h, nos da el parametro de interporlación, y con valores menores se puede observar un deterioro en la calidad de la señal.
+Usando la señal p3, es una señal sin un tratamiento base, ya que la frecuencias de las muestras y amplitudes no son buenas para un analisis.
+La relación de frecuencia entre p3 y p4, se debe al filtro de interpolación donde la frecuencia de p3 es la frecuencia de p4 dividido en el valor de la interpolación.
+
+c. La PSD de las señales varia en sutiles diferencias como en el muestreo de la señal, el ruido, las caracteristicas propias y el contenido en frecuencia.
+
+d.Es un bloque que usualemnte se ubica antes de la salida del flujograma, sirve para limitar la cantidad de muestras que crea la fuente.
+
+e.No se observa bien, ya que no tiene el tramiento adecuado
+
+F.Al observar el espectro de la señal de ruido si se observa por todo el ancho de frecuencias
+
+G.De igual forma al observar el espetro de las señales aleatorias se observa que se distribuyen por todas las frecuencias pero hay frecuencias donde se observa mas contendido
+
+H.Existe una relación entre la frecuencia de muestreo y los simbolos por segundo, mas la suma de 1, siendo este termino el lobulo a la mitad
+
+I.Si se tiene la rate bits y samples per simbol, se puede calcular la rate simbols, y este valor se puede aproximar
+
+J.
+
